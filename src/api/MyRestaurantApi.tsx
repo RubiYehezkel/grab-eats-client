@@ -3,7 +3,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { useMutation, useQuery } from "react-query";
 import { toast } from "sonner";
 import { useNavigate } from "react-router-dom";
-import { setTimeout } from "timers/promises";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
