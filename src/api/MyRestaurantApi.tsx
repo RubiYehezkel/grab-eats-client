@@ -15,7 +15,6 @@ export const userGetMyRestaurant = () => {
       method: "GET",
       headers: {
         Authorization: `Bearer ${accessToken}`,
-        "Access-Control-Allow-Origin": "true",
       },
     });
 
@@ -46,7 +45,6 @@ export const useCreateMyRestaurant = () => {
       method: "POST",
       headers: {
         Authorization: `Bearer ${accessToken}`,
-        "Access-Control-Allow-Origin": "true",
       },
       body: restaurantFormData,
     });
@@ -88,7 +86,6 @@ export const useUpdateMyRestaurant = () => {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${accessToken}`,
-        "Access-Control-Allow-Origin": "true",
       },
       body: restaurantFormData,
     });
@@ -128,7 +125,6 @@ export const useGetMyRestaurantOrders = () => {
       headers: {
         Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "true",
       },
     });
 
@@ -167,7 +163,6 @@ export const useUpdateMyRestaurantOrder = () => {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "true",
         },
         body: JSON.stringify({ status: updateStatusOrderRequest.status }),
       }

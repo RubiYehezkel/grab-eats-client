@@ -17,7 +17,6 @@ export const useGetMyUser = () => {
       headers: {
         Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "true",
       },
     });
 
@@ -56,7 +55,6 @@ export const useCreateMyUser = () => {
       headers: {
         Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "true",
       },
       body: JSON.stringify(user),
     });
@@ -100,7 +98,6 @@ export const useUpdateMyUser = () => {
       headers: {
         Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "true",
       },
       body: JSON.stringify(formData),
     });

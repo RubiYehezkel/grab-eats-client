@@ -14,7 +14,6 @@ export const useGetMyOrders = () => {
     const response = await fetch(`${API_BASE_URL}/api/order`, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
-        "Access-Control-Allow-Origin": "true",
       },
     });
 
@@ -66,7 +65,6 @@ export const useCreateCheckoutSession = () => {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "true",
         },
         body: JSON.stringify(checkoutSessionRequest),
       }
